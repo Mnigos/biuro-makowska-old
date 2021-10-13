@@ -1,0 +1,10 @@
+commitlint.config.js
+stylelint.config.js
+nuxt.config.js
+ts-shims.d.ts
+.eslintrc
+node_modules
+coverage
+dist
+.nuxt
+windi.config.ts

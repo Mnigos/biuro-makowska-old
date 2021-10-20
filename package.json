@@ -39,7 +39,7 @@
     "eslint-plugin-vue": "^7.19.1",
     "eslint-plugin-vue-a11y": "^0.0.31",
     "husky": "^7.0.2",
-    "jest": "^27.2.5",
+    "jest": "^27.3.1",
     "lint-staged": "^11.2.3",
     "nuxt-windicss": "^1.2.5",
     "nuxt3": "latest",

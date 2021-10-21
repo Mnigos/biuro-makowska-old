@@ -12,7 +12,7 @@
     "prepare": "husky install",
     "lint": "yarn lint:js && yarn lint:style",
     "lint:fix": "yarn lint:js --fix && yarn lint:style --fix",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "text:cov": "jest --coverage"
   },

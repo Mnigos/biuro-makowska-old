@@ -9007,15 +9007,16 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-windicss@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.0.4.tgz#39069584e90d283dc9db8f530ee9ff5d0c5a0641"
-  integrity sha512-HCG5jKqvm8tKWfqTnzXvBlv0IuhUj+ONFLb9Qb6bDwvp07/di4JbBxFFtsM7aiyqw/JZLdbTMKPBZ10TT2Oinw==
+nuxt-windicss@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.0.5.tgz#ca05ed4a7b888f05b062853b6c43c495f66881e8"
+  integrity sha512-0SvH1kZO4aZeS4xnTe8P61gVRKMa79PxZa4SUnDgg2AtGGng+wYLbziGmEY0dGcnkCKlEJ/fsTw9Wg2MX8xFyQ==
   dependencies:
     "@nuxt/kit-edge" latest
     defu "^5.0.0"
     h3 "^0.3.1"
     listhen "^0.2.4"
+    mlly "^0.3.0"
     pathe "^0.2.0"
     read-cache "^1.0.0"
     sirv "^1.0.17"

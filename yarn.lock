@@ -1568,10 +1568,10 @@
     node-html-parser "^3.2.0"
     ufo "^0.7.4"
 
-"@nuxt/kit-edge@latest":
-  version "3.0.0-27247485.fb4359e"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27247485.fb4359e.tgz#efbc5a2289857a698b5d04089ecf5fe9511f4bb2"
-  integrity sha512-BeWExUL4+WRRl0bn81NnlsmTelQl3r7jEpA/QLM5zgqTfWIfUVEgiOj1lgfouiGDhaZhgCgsV1263VwjM1578Q==
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version "3.0.0-27264620.a62351a"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27264620.a62351a.tgz#ffe869ffb904c9a0cee3315300617bb2000ed1b5"
+  integrity sha512-aHbEMGx+6OIEIEOzJFq4sBtnZYsuCdLccbeMw6BuOTUEgRbewC0qGzujQM4G37PCn0AA5VdyKMFIFR6D1E93KA==
   dependencies:
     consola "^2.15.3"
     create-require "^1.1.1"
@@ -1582,16 +1582,16 @@
     hookable "^5.0.0"
     jiti "^1.12.9"
     lodash.template "^4.5.0"
-    mlly "^0.3.0"
+    mlly "^0.3.11"
     pathe "^0.2.0"
-    pkg-types "^0.2.1"
+    pkg-types "^0.3.1"
     rc9 "^1.2.0"
     scule "^0.2.1"
     semver "^7.3.5"
     std-env "^2.3.1"
     ufo "^0.7.9"
     unctx "^1.0.2"
-    untyped "^0.2.9"
+    untyped "^0.2.11"
 
 "@nuxt/loading-screen@^2.0.3":
   version "2.0.4"
@@ -8698,10 +8698,10 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
-mlly@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/mlly/-/mlly-0.3.0.tgz#5705b2a95551d79ad33feedc046daf7c6d079748"
-  integrity sha512-6XphOVPsnIzuqNYlcZPMJhaMDDdrEgbLUlA7BPis8O0kkLPbOVA8GcXGeICGcnDotCtTkxAEWBT+FlhywrXTmg==
+mlly@^0.3.11, mlly@^0.3.6:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/mlly/-/mlly-0.3.11.tgz#b3a29ef090b43d27cafaf7a1653b17aae8de8b65"
+  integrity sha512-Md4jt3kLrp7ebOTdJ2YAF6TXE5Yd5D1CqdizxqG/Km6jHtR7tatu0oefAjvi1EgfvN8vu/Y/7mAutzpYCrHktw==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -9007,12 +9007,12 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-windicss@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.0.4.tgz#39069584e90d283dc9db8f530ee9ff5d0c5a0641"
-  integrity sha512-HCG5jKqvm8tKWfqTnzXvBlv0IuhUj+ONFLb9Qb6bDwvp07/di4JbBxFFtsM7aiyqw/JZLdbTMKPBZ10TT2Oinw==
+nuxt-windicss@^2.0.11:
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.0.11.tgz#4328e84eb89aad3930968cfaf681857be64d25d7"
+  integrity sha512-/vAEmKLq1Iomuj4lz751dsoXdlGVAoiEGSh3JVxuZJMkqc/yrHTQrNhtMaOQzx5heuVsQ+E2bIF+Q/tfxicOFQ==
   dependencies:
-    "@nuxt/kit-edge" latest
+    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
     defu "^5.0.0"
     h3 "^0.3.1"
     listhen "^0.2.4"
@@ -9020,9 +9020,9 @@ nuxt-windicss@^2.0.4:
     read-cache "^1.0.0"
     sirv "^1.0.17"
     vite-plugin-windicss "^1.4.11"
-    windicss "^3.1.9"
+    windicss "^3.2.0"
     windicss-analysis "^0.3.4"
-    windicss-webpack-plugin "^1.4.9"
+    windicss-webpack-plugin "^1.5.5"
 
 nuxt@^2.15.7:
   version "2.15.8"
@@ -9538,12 +9538,14 @@ pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-pkg-types@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/pkg-types/-/pkg-types-0.2.1.tgz#41a22a6689c1fb3df5434856cf158598342701b8"
-  integrity sha512-RlrGelHSS2yPeLT9NMuMIfpKS7+gRAhuXi+PexBeToKjbRkmu+E+HdgDY2ZKU1RDirk5w9WuViEhOufELtAnug==
+pkg-types@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/pkg-types/-/pkg-types-0.3.1.tgz#d7a8b69efb8777a05afc5aabfc259a29a5d6d159"
+  integrity sha512-BjECNgz/tsyqg0/T4Z/U7WbFQXUT24nfkxPbALcrk/uHVeZf9MrGG4tfvYtu+jsrHCFMseLQ6woQddDEBATw3A==
   dependencies:
     jsonc-parser "^3.0.0"
+    mlly "^0.3.6"
+    pathe "^0.2.0"
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"
@@ -12313,10 +12315,10 @@ unset-value@^1.0.0:
     has-value "^0.3.1"
     isobject "^3.0.0"
 
-untyped@^0.2.9:
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/untyped/-/untyped-0.2.9.tgz#3e3df96a303dec3e2eda55fcbdc02e2ab468683d"
-  integrity sha512-8d8V+q/y5CGzV+IYnoOCMjrK+NSNp1HKO8iPQ+bV4rBP8knPIme3+j/bpej8IuMnEMxOJZNptXNOXCx7w+VJxQ==
+untyped@^0.2.11:
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/untyped/-/untyped-0.2.11.tgz#a956977e82ad1186232995bc4ba4b68ae7d20b26"
+  integrity sha512-KVNcu9jB+mlnQJiunAzmqpnnn9R+yniT+AkOk9ZgCIsThwh0nlP6wO+O7mJjHM7Y2yplEu3v6NNtRvb82+uGxw==
 
 upath@^1.1.1:
   version "1.2.0"
@@ -12852,10 +12854,10 @@ windicss-analysis@^0.3.4:
     fs-extra "^10.0.0"
     sirv "^1.0.12"
 
-windicss-webpack-plugin@^1.4.9:
-  version "1.4.10"
-  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.4.10.tgz#fc42a3ad4fb5a9321b4ca2a0986a0e6ec7f50fb8"
-  integrity sha512-amx4ovN7mNr8V6NX/VxjbCam9iAx9Ll9tkGw6gTCZ7BoPxhMmHQ6B+qtdhClmS33NfxZY/xI5YOb695yKRZ4BQ==
+windicss-webpack-plugin@^1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.5.5.tgz#476d309f63f53a0d1053cf84b1af7da4a60c736b"
+  integrity sha512-ZAVZSmxtfeAYVBQR+QnhfGh44s4WGNcexNjPBX1PaObzR562JlGnbuT6z7r12kO2bDqz37qSnH50o73UjMNFFw==
   dependencies:
     "@windicss/plugin-utils" "^1.4.12"
     debug "^4.3.2"
@@ -12864,12 +12866,12 @@ windicss-webpack-plugin@^1.4.9:
     magic-string "^0.25.7"
     upath "^2.0.1"
     webpack-virtual-modules "^0.4.3"
-    windicss "^3.1.9"
+    windicss "^3.2.0"
 
-windicss@^3.1.9:
-  version "3.1.9"
-  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.1.9.tgz#e43d924168422efa743c8223607c3af47d2d0291"
-  integrity sha512-5YoKvXeCQXIdwc91BoOgpKbIImr2JS8I14rPMa/5dKDDPA4ot3NgICWKELkml39R/8rn4Q0BVUUTqN+w+hjDSA==
+windicss@^3.1.9, windicss@^3.2.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.2.1.tgz#bd0f7b9ebabba04ea8dfedcbb0263c2ef9591db4"
+  integrity sha512-LusrIrryBFHAPQ/OOTbS4EWWuzI6eGeJglI9nQ3kDBr1cqH69NWt8Z8q59f9kTkgptXroejmWfksWwqgHs8EVw==
 
 word-wrap@^1.2.3, word-wrap@~1.2.3:
   version "1.2.3"

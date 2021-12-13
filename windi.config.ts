@@ -6,8 +6,10 @@ export default defineConfig({
     exclude: ['node_modules', '.git'],
   },
   theme: {
-    colors: {
-      primary: '#5b0770',
+    extend: {
+      colors: {
+        primary: '#5b0770',
+      },
     },
   },
 })

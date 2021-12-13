@@ -14,6 +14,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   components: true,
+  css: ['~/assets/css/global.postcss'],
   buildModules: [
     '@nuxt/typescript-build',
     '@nuxtjs/stylelint-module',

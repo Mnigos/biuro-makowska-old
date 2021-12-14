@@ -8,7 +8,11 @@ export default defineConfig({
   theme: {
     extend: {
       colors: {
-        primary: '#202020',
+        primary: {
+          DEFAULT: '#202020',
+          dark: '#1b1b1b',
+          darker: '#101010',
+        },
         accent: '#5b0770',
       },
     },

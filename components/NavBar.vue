@@ -1,11 +1,19 @@
 <template>
-  <div class="flex justify-end">
-    <ul class="bg-primary flex justify-evenly w-1/3 p-5 rounded-bl-xl">
+  <nav class="flex justify-end">
+    <ul
+      class="bg-primary flex justify-evenly w-1/3 p-5 rounded-bl-xl text-white"
+    >
       <li v-for="({ name, path }, index) in routes" :key="index">
-        <nuxt-link class="uppercase" :to="path">{{ name }}</nuxt-link>
+        <nuxt-link
+          class="uppercase link hover:text-black"
+          :class="{ 'border-b-2 border-white': path === $route.path }"
+          :to="path"
+        >
+          {{ name }}
+        </nuxt-link>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <script lang="ts">
@@ -39,12 +47,17 @@ export default class NavBar extends Vue {
 }
 </script>
 
-<style lang="postcss">
-a {
-  color: white;
-  font-weight: 500;
-}
-.nuxt-link-active {
-  @apply border-white border-b-2;
+<style scoped lang="postcss">
+.link {
+  @apply focus:outline-none
+    before:transition-transform
+    before:duration-300
+    before:block
+    before:border-t
+    before:border-white
+    before:scale-x-0
+    before:origin-top
+    hover:before:scale-x-100
+    focus:before:scale-x-100;
 }
 </style>

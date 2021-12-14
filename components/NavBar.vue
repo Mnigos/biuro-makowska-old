@@ -1,7 +1,7 @@
 <template>
   <nav class="flex justify-end">
     <ul
-      class="bg-primary flex justify-evenly w-1/3 p-5 rounded-bl-xl text-white"
+      class="bg-accent flex justify-evenly w-1/3 p-5 rounded-bl-xl text-white"
     >
       <li v-for="({ name, path }, index) in routes" :key="index">
         <nuxt-link

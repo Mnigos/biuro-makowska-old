@@ -60,7 +60,7 @@
     "eslint-plugin-unicorn": "^37.0.1",
     "eslint-plugin-vue": "^7.12.1",
     "eslint-plugin-vue-a11y": "^0.0.31",
-    "husky": "^6.0.0",
+    "husky": "^7.0.4",
     "jest": "^27.0.5",
     "lint-staged": "^11.2.3",
     "nuxt-windicss": "^2.0.4",

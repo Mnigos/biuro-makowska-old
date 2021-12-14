@@ -19,6 +19,7 @@ export default {
     '@nuxt/typescript-build',
     '@nuxtjs/stylelint-module',
     'nuxt-windicss',
+    '@nuxt/image',
   ],
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa'],
   pwa: {

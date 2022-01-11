@@ -1,5 +1,6 @@
 <script setup lang="ts">
-/* @ts-expect-error */
+import { useRoute } from 'vue-router'
+
 const route = useRoute()
 </script>
 

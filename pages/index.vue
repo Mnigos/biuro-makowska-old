@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const cardContent = `
+import { ref } from 'vue'
+
+const cardContent = ref(`
 <p>
   Proponuję Państwu profesjonalne usługi księgowe<br />
   w atrakcyjnych cenach z możliwością odbioru dokumentów od klienta.
@@ -10,7 +12,7 @@ const cardContent = `
   <li>wieloletnie doświadczenie w obsłudze księgowej firm</li>
   <li>licencję Ministra Finansów</li>
   <li>ubezpieczenie w zakresie odpowiedzialności cywilnej</li>
-</ul>`
+</ul>`)
 </script>
 
 <template>

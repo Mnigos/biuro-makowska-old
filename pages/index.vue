@@ -3,8 +3,7 @@ import { ref } from 'vue'
 
 const cardContent = ref(`
 <p>
-  Proponuję Państwu profesjonalne usługi księgowe<br />
-  w atrakcyjnych cenach z możliwością odbioru dokumentów od klienta.
+  Proponuję Państwu profesjonalne usługi księgowe w atrakcyjnych cenach z możliwością odbioru dokumentów od klienta.
 </p>
 
 <ul class="list-inside list-disc">
@@ -27,6 +26,6 @@ const cardContent = ref(`
       <img src="/logo.png" alt="Logo Biuro Makowska" />
     </header>
 
-    <the-card title="Witam na mojej stronie" :content="cardContent" class="mt-48" />
+    <the-card title="Witam na mojej stronie" :content="cardContent" class="mt-48 md:w-128" />
   </div>
 </template>

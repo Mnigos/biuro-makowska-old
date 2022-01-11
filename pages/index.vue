@@ -14,7 +14,7 @@ const cardContent = `
 </script>
 
 <template>
-  <div class="flex justify-evenly w-full">
+  <div class="flex flex-col md:flex-row justify-evenly w-full">
     <header>
       <!-- This is for SEO optimalization -->
       <div class="hidden">
@@ -25,6 +25,6 @@ const cardContent = `
       <img src="/logo.png" alt="Logo Biuro Makowska" />
     </header>
 
-    <the-card title="Witam na mojej stronie" :content="cardContent" />
+    <the-card title="Witam na mojej stronie" :content="cardContent" class="mt-48" />
   </div>
 </template>

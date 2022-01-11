@@ -12,7 +12,7 @@ const route = useRoute()
       <TheNavbar />
     </div>
 
-    <div class="p-16">
+    <div class="p-4 sm:p-8 md:p-16">
       <slot />
     </div>
   </div>

@@ -21,7 +21,7 @@ const pages: Page[] = [
 </script>
 
 <template>
-  <nav class="bg-accent text-white font-semibold p-4 w-1/4 rounded-bl-2xl">
+  <nav class="bg-accent text-white font-semibold p-4 w-full md:w-64 md:rounded-bl-2xl">
     <ul class="flex gap-4 justify-around">
       <li v-for="({ title, path }, index) in pages" :key="index">
         <router-link :to="path">

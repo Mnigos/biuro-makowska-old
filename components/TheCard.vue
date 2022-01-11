@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  content: {
-    type: String,
-    default: '',
-  },
-})
+interface Props {
+  title: string
+  content: string
+}
+
+const { title } = defineProps<Props>()
 </script>
 
 <template>

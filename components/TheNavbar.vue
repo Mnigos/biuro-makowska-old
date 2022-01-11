@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 interface Page {
   title: string
   path: string
 }
 
-const pages: Page[] = [
+const pages = ref<Page[]>([
   {
     title: 'Home',
     path: '/',
@@ -17,7 +19,7 @@ const pages: Page[] = [
     title: 'Contact',
     path: '/contact',
   },
-]
+])
 </script>
 
 <template>

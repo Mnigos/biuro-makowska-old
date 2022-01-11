@@ -7,7 +7,7 @@ export default {
   moduleFileExtensions: ['ts', 'js', 'vue', 'json'],
   transform: {
     '^.+\\.ts$': 'ts-jest',
-    '^.+\\.js$': 'ts-jest',
+    '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest',
   },
   collectCoverage: false,

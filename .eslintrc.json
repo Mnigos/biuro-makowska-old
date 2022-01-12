@@ -39,6 +39,7 @@
     "prettier/prettier": "warn",
     "prefer-const": "warn",
     "no-console": "off",
+    "space-before-function-paren": "off",
     "unicorn/no-abusive-eslint-disable": "off",
     "vue/attribute-hyphenation": "off",
     "@typescript-eslint/no-unused-vars": "off",

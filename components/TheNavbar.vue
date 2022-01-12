@@ -28,9 +28,9 @@ const pages = ref<Page[]>([
   >
     <ul class="flex gap-4 justify-around">
       <li v-for="({ title, path }, index) in pages" :key="index">
-        <router-link :to="path">
+        <nuxt-link :to="path">
           {{ title }}
-        </router-link>
+        </nuxt-link>
       </li>
     </ul>
   </nav>

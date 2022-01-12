@@ -22,13 +22,19 @@
       }
     }
   },
-  "plugins": ["@typescript-eslint", "prettier", "jest", "eslint-plugin-import-helpers"],
+  "overrides": [
+    {
+      "files": ["*.(spec|test).ts"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"]
+    }
+  ],
+  "plugins": ["@typescript-eslint", "prettier", "eslint-plugin-import-helpers"],
   "extends": [
     "prettier",
     "@nuxtjs/eslint-config-typescript",
     "plugin:nuxt/recommended",
     "plugin:sonarjs/recommended",
-    "plugin:jest/all",
     "plugin:import/warnings",
     "plugin:import/typescript",
     "plugin:vue-a11y/base",

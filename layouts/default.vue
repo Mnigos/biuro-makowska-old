@@ -6,7 +6,7 @@ const route = useRoute()
 
 <template>
   <div
-    class="bg-primary min-h-screen text-white flex flex-col justify-between"
+    class="bg-primary-darker min-h-screen text-white flex flex-col justify-between bg-no-repeat"
     :style="route.path === '/' ? 'background-image: url(/background.jpg)' : ''"
   >
     <div class="flex justify-end">

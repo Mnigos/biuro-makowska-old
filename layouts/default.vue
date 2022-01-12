@@ -6,17 +6,19 @@ const route = useRoute()
 
 <template>
   <div
-    class="bg-primary-darker min-h-screen text-white flex flex-col justify-between bg-no-repeat"
+    class="bg-primary-darker min-h-screen text-white bg-no-repeat"
     :style="route.path === '/' ? 'background-image: url(/background.jpg)' : ''"
   >
-    <div class="flex justify-end">
+    <div class="flex justify-end absolute right-0">
       <the-navbar />
     </div>
 
-    <div class="p-4 sm:p-8 md:p-16">
-      <slot />
-    </div>
+    <div class="flex flex-col justify-between">
+      <main class="p-4 sm:p-8 md:p-16">
+        <slot />
+      </main>
 
-    <the-footer class="justify-self-end" />
+      <the-footer class="justify-self-end" />
+    </div>
   </div>
 </template>

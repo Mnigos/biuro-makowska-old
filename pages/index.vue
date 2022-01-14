@@ -1,19 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const cardContent = ref(`
-<p>
-  Proponuję Państwu profesjonalne usługi księgowe w atrakcyjnych cenach z możliwością odbioru dokumentów od klienta.
-</p>
-
-<ul class="list-inside list-disc">
-  <p>Posiadam:</p>
-  <li>wieloletnie doświadczenie w obsłudze księgowej firm</li>
-  <li>licencję Ministra Finansów</li>
-  <li>ubezpieczenie w zakresie odpowiedzialności cywilnej</li>
-</ul>`)
-</script>
-
 <template>
   <div class="flex flex-col md:flex-row justify-evenly w-full">
     <header>
@@ -26,6 +10,18 @@ const cardContent = ref(`
       <img src="/logo.png" alt="Logo Biuro Makowska" />
     </header>
 
-    <the-card title="Witam na mojej stronie" :content="cardContent" class="mt-48 md:w-128" />
+    <the-card title="Witam na mojej stronie" class="mt-48 md:w-128">
+      <p>
+        Proponuję Państwu profesjonalne usługi księgowe w atrakcyjnych cenach z możliwością odbioru
+        dokumentów od klienta.
+      </p>
+
+      <ul class="list-inside list-disc">
+        <p>Posiadam:</p>
+        <li>wieloletnie doświadczenie w obsłudze księgowej firm</li>
+        <li>licencję Ministra Finansów</li>
+        <li>ubezpieczenie w zakresie odpowiedzialności cywilnej</li>
+      </ul>
+    </the-card>
   </div>
 </template>

@@ -23,5 +23,7 @@
         <li>ubezpieczenie w zakresie odpowiedzialności cywilnej</li>
       </ul>
     </the-card>
+
+    <contact-form />
   </div>
 </template>

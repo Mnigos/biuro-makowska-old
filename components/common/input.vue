@@ -12,8 +12,15 @@ const id = generateId(label)
 </script>
 
 <template>
-  <label :for="id">
+  <label :for="id" class="flex flex-col items-center gap-2 relative group">
     {{ label }}
-    <input :id="id" />
+
+    <span
+      class="text-[#606060] absolute bottom-[.1rem] left-1 transition-opacity group-hover:opacity-0 duration-300"
+    >
+      {{ label }}
+    </span>
+
+    <input :id="id" class="border-b-2 border-accent bg-primary-dark outline-none" />
   </label>
 </template>

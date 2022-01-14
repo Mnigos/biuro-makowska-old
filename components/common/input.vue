@@ -1,18 +1,25 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, ref } from 'vue'
 
 import { generateId } from '~/utils'
 
 interface Props {
   label: string
+  validator?: (value: string) => Array<string | boolean>
 }
+const { label, validator } = withDefaults(defineProps<Props>(), {
+  validator: () => [],
+})
 
-const { label } = defineProps<Props>()
 const id = generateId(label)
+const value = ref('')
+const errors = ref<Array<string | boolean>>([])
+
+const validate = () => errors.value.push(...validator(value.value))
 </script>
 
 <template>
-  <label :for="id" class="flex flex-col items-center gap-2 relative group">
+  <label :for="id" class="flex flex-col items-center gap-2 relative group mb-5">
     {{ label }}
 
     <span
@@ -23,7 +30,13 @@ const id = generateId(label)
 
     <input
       :id="id"
+      v-model="value"
       class="border-b-2 border-accent bg-primary-dark outline-none p-1 rounded-md shadow-2xl w-full"
+      @change="validate"
     />
+
+    <p v-for="(error, index) in errors" :key="index" class="absolute -bottom-8 text-red-500">
+      {{ error }}
+    </p>
   </label>
 </template>

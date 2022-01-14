@@ -16,11 +16,14 @@ const id = generateId(label)
     {{ label }}
 
     <span
-      class="text-[#606060] absolute bottom-[.1rem] left-1 transition-opacity group-hover:opacity-0 duration-300"
+      class="text-[#606060] absolute bottom-[.4rem] left-1 transition-opacity group-hover:opacity-0 duration-300"
     >
       {{ label }}
     </span>
 
-    <input :id="id" class="border-b-2 border-accent bg-primary-dark outline-none" />
+    <input
+      :id="id"
+      class="border-b-2 border-accent bg-primary-dark outline-none p-1 rounded-md shadow-2xl"
+    />
   </label>
 </template>

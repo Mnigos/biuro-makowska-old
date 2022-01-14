@@ -23,7 +23,7 @@ const id = generateId(label)
 
     <input
       :id="id"
-      class="border-b-2 border-accent bg-primary-dark outline-none p-1 rounded-md shadow-2xl"
+      class="border-b-2 border-accent bg-primary-dark outline-none p-1 rounded-md shadow-2xl w-full"
     />
   </label>
 </template>

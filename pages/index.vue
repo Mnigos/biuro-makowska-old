@@ -27,7 +27,7 @@
     </article>
 
     <article>
-      <contact-form class="w-1/2" />
+      <contact-form class="w-1/3" />
     </article>
   </div>
 </template>

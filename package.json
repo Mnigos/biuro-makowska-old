@@ -4,7 +4,7 @@
   "author": "Igor Makowski <makowskiigor@gmail.com>",
   "private": false,
   "scripts": {
-    "dev": "nuxi dev",
+    "dev": "nuxi dev --devtools",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
     "prepare": "husky install",

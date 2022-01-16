@@ -8,16 +8,16 @@ interface Page {
 
 const pages = ref<Page[]>([
   {
-    title: 'Home',
+    title: 'Strona główna',
     path: '/',
   },
   {
-    title: 'About',
-    path: '/about',
+    title: 'Kontakt',
+    path: '/kontakt',
   },
   {
-    title: 'Contact',
-    path: '/contact',
+    title: 'Cennik',
+    path: '/cennik',
   },
 ])
 
@@ -47,7 +47,7 @@ function handleScroll() {
 
 <template>
   <nav
-    class="bg-accent text-white font-semibold p-4 w-full md:w-64 md:rounded-bl-2xl shadow-2xl"
+    class="bg-accent text-white font-semibold p-4 w-full md:w-96 md:rounded-bl-2xl shadow-2xl"
     :class="showNavbar ? 'fixed' : ''"
   >
     <ul class="flex gap-4 justify-around">

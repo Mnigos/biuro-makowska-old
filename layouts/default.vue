@@ -13,7 +13,7 @@ const route = useRoute()
       <the-navbar />
     </div>
 
-    <div class="flex flex-col justify-between">
+    <div class="flex flex-col justify-between min-h-screen">
       <main class="p-4 sm:p-8 md:p-16">
         <slot />
       </main>

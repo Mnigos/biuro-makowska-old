@@ -16,8 +16,9 @@ const { title } = defineProps<Props>()
     </header>
 
     <main>
-      <!--eslint-disable-next-line vue/no-v-html-->
-      <div class="flex flex-col gap-4" v-html="content" />
+      <div class="flex flex-col gap-4">
+        <slot />
+      </div>
     </main>
   </section>
 </template>

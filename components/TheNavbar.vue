@@ -37,9 +37,7 @@ function handleScroll() {
     return
   }
 
-  if (Math.abs(currentScrollPosition - lastScrollPosition) < 1) {
-    return
-  }
+  if (Math.abs(currentScrollPosition - lastScrollPosition) < 1) return
 
   showNavbar.value = currentScrollPosition < lastScrollPosition
 

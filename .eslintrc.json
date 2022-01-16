@@ -46,6 +46,7 @@
     "prefer-const": "warn",
     "no-console": "off",
     "space-before-function-paren": "off",
+    "curly": ["error", "multi"],
     "unicorn/no-abusive-eslint-disable": "off",
     "vue/attribute-hyphenation": "off",
     "@typescript-eslint/no-unused-vars": "off",

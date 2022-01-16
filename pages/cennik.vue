@@ -1,6 +1,5 @@
 <script setup lang="ts">
 /* eslint-disable sonarjs/no-duplicate-string */
-import ExpandCard from '~/components/ExpandCard.vue'
 const firstSections = [
   {
     title: 'Obsługa księgowa',
@@ -159,9 +158,9 @@ const thirdSections = [
 </script>
 
 <template>
-  <div class="min-h-full flex flex-col gap-16">
-    <header class="w-2/3">
-      <h1 class="text-3xl">
+  <div class="min-h-full flex flex-col gap-16 overflow-x-hidden">
+    <header class="lg:w-2/3 mt-12 sm:mt-0">
+      <h1 class="text-2xl md:text-3xl">
         Umowy o prowadzenie ksiąg oraz umowa o obslugę kadrową zawartą z
         <p class="font-bold">Biurem Rachunkowym <span class="text-accent">Joanna Makowska</span></p>
       </h1>

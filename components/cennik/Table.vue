@@ -19,7 +19,7 @@ function calculateIndex(row: number, col: number) {
   <section class="flex flex-col gap-3 md:w-1/2">
     <h3 class="text-lg font-semibold">{{ title }}</h3>
 
-    <table>
+    <table class="max-w-screen block overflow-x-auto">
       <tr v-for="(_rowEl, rowIndex) in Array.from({ length: rows })" :key="rowIndex">
         <td
           v-for="(_colEl, colIndex) in Array.from({ length: cols })"

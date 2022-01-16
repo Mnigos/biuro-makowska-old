@@ -3,7 +3,6 @@ import { defineProps } from 'vue'
 
 interface Props {
   title: string
-  content: string
 }
 
 const { title } = defineProps<Props>()

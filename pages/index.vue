@@ -8,7 +8,17 @@
           <p>Joanna Makowska</p>
         </div>
 
-        <img src="/logo.png" alt="Logo Biuro Makowska" />
+        <!-- <img src="logo.png" alt="Logo Biuro Makowska" /> -->
+        <div
+          style="
+            background-image: url('/logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 500px;
+            height: 500px;
+          "
+        />
       </header>
 
       <the-card title="Witam na mojej stronie" class="mt-48 md:w-128">

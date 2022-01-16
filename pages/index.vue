@@ -37,7 +37,9 @@
     </article>
 
     <article class="flex flex-col gap-16">
-      <section class="flex justify-end">
+      <section class="flex justify-between">
+        <img src="kibr-logo.png" alt="Logo KIBR" class="w-1/3 h-1/3 self-center" />
+
         <the-card class="w-1/2" title="O Firmie">
           <p>
             Biuro Rachunkowe Joanna Makowska to certyfikowane biuro, które zapewnia swoim klientom

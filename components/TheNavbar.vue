@@ -12,10 +12,6 @@ const pages = ref<Page[]>([
     path: '/',
   },
   {
-    title: 'Kontakt',
-    path: '/kontakt',
-  },
-  {
     title: 'Cennik',
     path: '/cennik',
   },

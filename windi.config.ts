@@ -13,7 +13,10 @@ export default defineConfig({
           dark: '#1b1b1b',
           darker: '#101010',
         },
-        accent: '#5b0770',
+        accent: {
+          DEFAULT: '#5b0770',
+          light: '#A20CC7',
+        },
       },
     },
   },

@@ -160,14 +160,19 @@ const thirdSections = [
 <template>
   <div class="min-h-full flex flex-col gap-16 overflow-x-hidden">
     <header class="lg:w-2/3 mt-12 sm:mt-0">
-      <h1 class="text-2xl md:text-3xl">
+      <h1 class="text-2xl md:text-3xl md:mt-12">
         Umowy o prowadzenie ksiąg oraz umowa o obslugę kadrową zawartą z
-        <p class="font-bold">Biurem Rachunkowym <span class="text-accent">Joanna Makowska</span></p>
+        <p class="font-bold">
+          Biurem Rachunkowym <span class="text-accent-light">Joanna Makowska</span>
+        </p>
       </h1>
     </header>
 
-    <article class="flex flex-col gap-16">
-      <expand-card title="Cennik usług księgowych dla podatników zwolnionych z VAT">
+    <article class="flex flex-col gap-16 items-center">
+      <expand-card
+        title="Cennik usług księgowych dla podatników zwolnionych z VAT"
+        class="w-full lg:w-2/3"
+      >
         <cennik-table
           v-for="({ title, rows, cols, table }, index) in firstSections"
           :key="index"
@@ -178,7 +183,7 @@ const thirdSections = [
         />
       </expand-card>
 
-      <expand-card title="Cennik usług księgowych dla podatników VAT">
+      <expand-card title="Cennik usług księgowych dla podatników VAT" class="w-full lg:w-2/3">
         <cennik-table
           v-for="({ title, rows, cols, table }, index) in secondSections"
           :key="index"
@@ -189,7 +194,7 @@ const thirdSections = [
         />
       </expand-card>
 
-      <expand-card title="Cennik usług dodatkowych">
+      <expand-card title="Cennik usług dodatkowych" class="w-full lg:w-2/3">
         <cennik-table
           v-for="({ title, rows, cols, table }, index) in thirdSections"
           :key="index"
@@ -206,7 +211,7 @@ const thirdSections = [
         ZUS – składka zdrowotna według Nowego Ładu – naliczenie i wysyłka deklaracji – 50 zł/mc
       </p>
 
-      <p class="text-red-500">Podane ceny, są cenami netto, należy do nich doliczyć 23%VAT</p>
+      <p class="text-red-500">Podane ceny, są cenami netto, należy do nich doliczyć 23% VAT</p>
     </article>
   </div>
 </template>

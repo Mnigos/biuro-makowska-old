@@ -38,7 +38,18 @@
 
     <article class="flex flex-col gap-16">
       <section class="flex justify-between">
-        <img src="kibr-logo.png" alt="Logo KIBR" class="w-1/3 h-1/3 self-center" />
+        <!-- <img src="kibr-logo.png" alt="Logo KIBR" class="w-1/3 h-1/3 self-center" /> -->
+        <div
+          class="w-1/3 h-1/3 self-center"
+          style="
+            background-image: url('/kibr-logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 500px;
+            height: 500px;
+          "
+        />
 
         <the-card class="w-1/2" title="O Firmie">
           <p>

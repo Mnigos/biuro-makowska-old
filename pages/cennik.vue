@@ -4,8 +4,8 @@ const firstSections = [
   {
     title: 'Obsługa księgowa',
     rows: 1,
-    cols: 3,
-    table: ['Do 5 dokumentów', '150,00zł', 'Każdy kolejny dokument 4zł'],
+    cols: 1,
+    table: ['od 150,00zł'],
   },
   {
     title: 'Obsługa płacowa',
@@ -32,8 +32,8 @@ const secondSections = [
   {
     title: 'Obsługa księgowa',
     rows: 1,
-    cols: 3,
-    table: ['Do 20 dokumentów', '250,00zł', 'Każdy kolejny dokument 4zł'],
+    cols: 1,
+    table: ['od 250,00zł'],
   },
   {
     title: 'Obsługa płacowa',

@@ -13,7 +13,7 @@ onMounted(() => {
 <template>
   <div class="flex flex-col w-full gap-12">
     <article
-      class="flex flex-col lg:flex-row justify-evenly min-h-screen items-center lg:items-start"
+      class="flex flex-col lg:flex-row justify-evenly min-h-[60vh] items-center lg:items-start"
     >
       <header>
         <!-- This is for SEO optimalization -->
@@ -21,17 +21,6 @@ onMounted(() => {
           <h1>Biuro Rachunkowe</h1>
           <p>Joanna Makowska</p>
         </div>
-
-        <!-- <div
-          style="
-            background-image: url('/logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 500px;
-            height: 500px;
-          "
-        /> -->
 
         <img :src="'/logo.png'" alt="Biuro Rachunkowe" class="mt-36 sm:mt-0" />
       </header>
@@ -52,21 +41,10 @@ onMounted(() => {
     </article>
 
     <article class="flex flex-col gap-16">
-      <section class="flex flex-col lg:flex-row justify-between items-center gap-12">
-        <!-- <div
-          class="w-1/3 h-1/3 self-center"
-          style="
-            background-image: url('/kibr-logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 500px;
-            height: 500px;
-          "
-        /> -->
+      <section class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12">
         <img :src="'/kibr-logo.png'" alt="Biuro Rachunkowe" class="md:w-1/2 xl:w-1/3" />
 
-        <the-card class="lg:w-1/2" title="O Firmie">
+        <the-card class="lg:w-1/2 lg:mt-20" title="O Firmie">
           <p>
             Biuro Rachunkowe Joanna Makowska to certyfikowane biuro, które zapewnia swoim klientom
             profesjonalną obsługę oraz rzetelne i fachowe świadczenie usług księgowych.

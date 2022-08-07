@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useRoute } from 'vue-router'
 
 interface Page {
   title: string
@@ -16,6 +17,8 @@ const pages = ref<Page[]>([
     path: '/cennik',
   },
 ])
+
+const route = useRoute()
 
 const showNavbar = ref(true)
 let lastScrollPosition = 0
@@ -43,12 +46,19 @@ function handleScroll() {
 
 <template>
   <nav
-    class="bg-accent text-white font-semibold p-4 w-full md:w-96 md:rounded-bl-2xl shadow-2xl"
-    :class="showNavbar ? 'fixed' : ''"
+    class="bg-accent text-white font-semibold p-4 w-full md:w-96 md:rounded-bl-2xl shadow-2xl fixed transition-opacity duration-300"
+    :class="showNavbar ? 'opacity-100' : 'opacity-0'"
   >
     <ul class="flex gap-4 justify-around">
       <li v-for="({ title, path }, index) in pages" :key="index">
-        <nuxt-link :to="path">
+        <nuxt-link
+          :to="showNavbar ? path : ''"
+          class="text-gray-400 hover:text-white"
+          :class="[
+            showNavbar ? 'cursor-pointer' : 'cursor-default',
+            path === route.path && '!text-white',
+          ]"
+        >
           {{ title }}
         </nuxt-link>
       </li>

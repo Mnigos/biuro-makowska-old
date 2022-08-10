@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  head: {
+  meta: {
     title: 'Biuro Makowska',
     meta: [
       { charset: 'utf-8' },
@@ -29,7 +29,4 @@ export default defineNuxtConfig({
     ],
   },
   buildModules: ['nuxt-windicss'],
-  windicss: {
-    analyze: true,
-  },
 })

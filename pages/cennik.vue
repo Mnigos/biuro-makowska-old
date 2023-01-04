@@ -4,27 +4,32 @@ const firstSections = [
   {
     title: 'Obsługa księgowa',
     rows: 1,
-    cols: 1,
-    table: ['od 150,00zł'],
+    cols: 2,
+    table: ['Do 5 dokumentów', 'od 150,00zł'],
   },
   {
     title: 'Obsługa płacowa',
-    rows: 3,
+    rows: 2,
     cols: 2,
     table: [
-      '',
-      'Pakiet',
       'lista płac dla pracowników i rachunki zleceniobiorców z ZUS',
-      '50,00 zł/osoba',
+      '55,00 zł/osoba',
       'rachunki dla zleceniobiorców bez ZUS',
       '40,00 zł/osoba',
     ],
   },
   {
     title: 'Obsługa kadrowa',
-    rows: 2,
+    rows: 3,
     cols: 2,
-    table: ['kardy', '60,00 zł/osoba', 'dokumentacja zleceniobiorcy', '30,00 zł/osoba'],
+    table: [
+      '',
+      'Pakiet',
+      'kardy',
+      '65,00 zł/osoba',
+      'dokumentacja zleceniobiorcy',
+      '30,00 zł/osoba',
+    ],
   },
 ]
 
@@ -32,8 +37,8 @@ const secondSections = [
   {
     title: 'Obsługa księgowa',
     rows: 1,
-    cols: 1,
-    table: ['od 250,00zł'],
+    cols: 3,
+    table: ['Do 10 dokumentów', 'od 250,00zł', 'Kolejny dokument 4,50zł'],
   },
   {
     title: 'Obsługa płacowa',
@@ -41,7 +46,7 @@ const secondSections = [
     cols: 2,
     table: [
       'lista płac dla pracowników i rachunki zleceniobiorców z ZUS',
-      '50,00 zł/osoba',
+      '55,00 zł/osoba',
       'rachunki dla zleceniobiorców bez ZUS',
       '40,00 zł/osoba',
     ],
@@ -64,13 +69,13 @@ const secondSections = [
 const thirdSections = [
   {
     title: 'Usługi księgowe dodatkowe',
-    rows: 10,
+    rows: 11,
     cols: 2,
     table: [
       'Konstultacja księgowa- 1 godzina',
       '150,00zł',
       'Zeznanie roczne PIT-37, PIT-38, PIT-28',
-      'od 100,00zł',
+      'od 150,00zł',
       'Korekta zeznania, deklaracji, pliku jpk, wniosku ZUS',
       'od 50,00zł',
       'Usługa expresowa w ciągu 24 godzin',
@@ -80,13 +85,15 @@ const thirdSections = [
       'Delegacja zagraniczna',
       '60,00 zł',
       'Różnice kursowe na KPIR – 1 dokument',
-      '5,00 zł',
+      '6,00 zł',
       'Przewalutowanie – 1 dokument',
-      '5,00 zł',
+      '6,00 zł',
       'Dokumentacja do kredytu',
       '100,00 zł',
       'Opóźnienie w dostarczeniu dokumentów powyżej 5 dni',
       'Dodatkowo 20% ceny podstaw',
+      'Sporządzenie deklaracji VAT UE',
+      '50,00 zł',
     ],
   },
   {
@@ -97,7 +104,7 @@ const thirdSections = [
       'Korekta listy płac i deklaracji ZUS',
       '50,00 zł',
       'Roczne sprawozdanie wynagrodzeń i podatków',
-      '20,00 zł',
+      '30,00 zł',
       'Wniosek do PFRON pierwszy pracownik',
       '150,00 zł',
       'Wniosek do PFRON kolejny pracownik',
@@ -141,17 +148,17 @@ const thirdSections = [
       'Ustalenie składek preferencyjnych na podstawie dochodu',
       '100,00 zł',
       'Roczne rozliczenie składki zdrowotnej',
-      '100,00 zł',
+      'od 100,00 zł',
       'Wnioski o urlopy macierzyńskie, opiekuńcze, ojcowskie',
-      '50,00 zł',
+      '60,00 zł',
       'Wniosek A1',
-      '100,00 zł',
+      '150,00 zł',
       'Wniosek o niezaleganie w ZUS',
       '50,00 zł',
       'Korekta DRA',
       '50,00 zł',
       'Wniosek Z-3, Z-3A, Z3B',
-      '50,00 zł',
+      '60,00 zł',
     ],
   },
 ]
@@ -212,6 +219,10 @@ const thirdSections = [
       </p>
 
       <p class="text-red-500">Podane ceny, są cenami netto, należy do nich doliczyć 23% VAT</p>
+
+      <p class="text-red-500">
+        Ceny usług dodatkowych, których nie ma w cenniku ustalane są indywidualnie.
+      </p>
     </article>
   </div>
 </template>

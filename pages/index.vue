@@ -80,7 +80,7 @@ onMounted(() => {
       <section class="lg:w-1/3">
         <the-card title="Kontakt">
           <contact-link
-            href="https://www.facebook.com/BiuroRachunkoweJoannaMakowska"
+            href="https://www.facebook.com/profile.php?id=100086454979198"
             class="text-sm sm:text-md"
           >
             <icon-facebook />

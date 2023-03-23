@@ -1,6 +1,5 @@
-import { defineNuxtConfig } from 'nuxt3'
-
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+// @ts-expect-error: No types available
 export default defineNuxtConfig({
   meta: {
     title: 'Biuro Makowska',
@@ -28,5 +27,5 @@ export default defineNuxtConfig({
       { rel: 'manifest', href: '/site.webmanifest' },
     ],
   },
-  buildModules: ['nuxt-windicss'],
+  modules: ['nuxt-windicss'],
 })
